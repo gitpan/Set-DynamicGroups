@@ -1,0 +1,159 @@
+Revision History for Set-DynamicGroups
+======================================
+
+0.013005
+--------
+
+2f2dcc3 Add missing word to make the sentence read better
+
+c377bef Remove the parentheses after 'croak' for documentation consistency
+
+5ed036a Add various specification examples to Synopsis
+
+020d5f6 Remove strange looking parentheses after Pod link
+
+5f38b6a Change 'die' to 'croak' and add C formatting codes
+
+v0.13 2010-12-31
+----------------
+
+00ff813 Change items() and _flatten_items() to return a list rather than an arrayref
+
+cbc251f Add example usage (verbatim paragraph) to new() documentation for consistency
+
+49043bf Expound on normalize() documentation
+
+9a55af2 Add comments about things we should test for
+
+33b14c3 Refer to dependency resolution discussion in code comments
+
+e317330 Link to Dependency Resolution section from groups() documentation
+
+99444d2 Transform TODO section into Bugs and Limitations
+
+7c7c380 Add "conversation" about mutual dependency resolution
+
+7bec5a5 Remove TODO item about infinite recursion avoidance
+
+adcfad9 Mention in Group Specification section that groups w/o includes get populated with all
+
+2acc56a Link to Group Specification section from Description
+
+62af442 Clarify the result of items() (in the Pod)
+
+5f79b5c Test that mutual dependencies are resolved as expected and recursion is not infinite
+
+v0.12 2010-12-31
+----------------
+
+cf535e4 Avoid infinite recursion by passing a hash of names
+
+v0.11 2010-12-31
+----------------
+
+8970272 Change append() to add() for simplicity
+
+6a80a2e Add TODO item about infinite recursion for mutually dependent groups
+
+d263748 Link to GROUP SPECIFICATION section from method documentation
+
+8d155c8 Add more examples of actual usage
+
+5bc50cc Expound on append_items() usage/purpose
+
+8db956d Die if group() is called with a group that doesn't exist
+
+v0.10 2010-12-30
+----------------
+
+35ef1bb Add group() method that returns a list of members for a single group
+
+01a523b Organize the aliases consistently
+
+0238c06 Call it a 'string' rather than a 'scalar' since what we really expect is a string
+
+0f73191 Add general description (to previously empty DESCRIPTION Pod section)
+
+089e200 Short circuit _determine_items() and return an empty array if the group hasn't been defined
+
+v0.9 2010-12-23
+---------------
+
+4b5d1e8 Hide determine_items() method since its internal
+
+4887f4f Allow group names to be passed to groups() to limit the hashref to just those keys
+
+5326be8 Test in(/ex)clude_groups (in/not_in)
+
+v0.8 2010-12-23
+---------------
+
+eb098d2 Make items() return a unique list
+
+9f03d50 When appending items to a group only append unique ones
+
+a77fb78 Abstract push-unique-items logic to _push_unique()
+
+v0.7 2010-12-23
+---------------
+
+4d97c1b If a group spec has no includes (only excludes) populate with all known items first
+
+v0.6 2010-12-23
+---------------
+
+43507e6 Change storage mechanism of 'items' and recalculate when items() called
+
+v0.5 2010-12-23
+---------------
+
+0f0c502 Make 'items' the canonical term and 'members' the alias
+
+0f54d10 Further test append() and test set()
+
+v0.4 2010-12-22
+---------------
+
+3a493a4 Maintain order of group members and refactor redundant code into another method
+
+b3741f2 Add a TODO item to the POD about the idea of caching group calculations
+
+a7c1209 Change POD spellings for consistency
+
+af059bd Change lexical %spec_aliases to package %Aliases
+
+e4f6f31 Document the constructor
+
+e7ef77f Add items listed in in(/ex)clude specifications to the 'all items' list automatically
+
+0e7de83 Define set() and set_members() to allow lists to be reset instead of /always/ appending
+
+v0.3 2010-12-22
+---------------
+
+674a8b2 Maintain a list of all items
+
+4bb64a5 Use Carp and import 'croak'
+
+43f09b2 Update POD examples for append() method
+
+e92273b Implement specification aliases
+
+a3e2db7 Document the group specification in a new POD section
+
+v0.2 2010-12-22
+---------------
+
+affec02 Change group specifications from arrayrefs of items to hashrefs of instructions
+
+1b6e1ab Define 'groups' method to return all groups and their members
+
+ebf5a69 Move Rationale/See Also POD from README to main module
+
+9ed3ddf Write explicit (valid) POD since we're not running the README through a generator
+
+9b7f3ec Add README for github
+
+===================================
+End of changes in the last 365 days
+===================================
