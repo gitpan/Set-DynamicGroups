@@ -20,7 +20,7 @@ my %module_build_args = (
     'Randy Stauner <rwstauner@cpan.org>'
   ],
   'dist_name' => 'Set-DynamicGroups',
-  'dist_version' => '0.013005',
+  'dist_version' => '0.014',
   'license' => 'perl',
   'module_name' => 'Set::DynamicGroups',
   'recommends' => {},

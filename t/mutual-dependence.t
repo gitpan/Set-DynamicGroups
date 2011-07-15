@@ -1,12 +1,12 @@
+# vim: set ts=2 sts=2 sw=2 expandtab smarttab:
 use strict;
 use warnings;
-use Test::More;
+use Test::More 0.96;
 
 my $mod = 'Set::DynamicGroups';
-require_ok($mod);
+eval "require $mod" or die $@;
 
-my $set = $mod->new;
-isa_ok($set, $mod);
+my $set = new_ok($mod);
 
 $set->set(a => {in => 'b'});
 $set->set(b => {in => 'a'});
